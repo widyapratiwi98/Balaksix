@@ -1,0 +1,56 @@
+
+body {
+  font-family: sans-serif;
+  margin: 0;
+  background-color: #121212;
+  color: white;
+}
+.hidden {
+  display: none;
+}
+.login-screen {
+  text-align: center;
+  padding: 2em;
+}
+.login-screen input {
+  display: block;
+  margin: 1em auto;
+  padding: 0.5em;
+}
+.dashboard header, .dashboard section, .dashboard footer {
+  padding: 1em;
+}
+.slider .slides {
+  display: flex;
+  overflow-x: auto;
+}
+.slider img {
+  width: 200px;
+  height: 120px;
+  margin-right: 1em;
+  border-radius: 10px;
+}
+.games {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.game-box {
+  background: #1e1e1e;
+  margin: 1em;
+  padding: 1em;
+  border-radius: 10px;
+  text-align: center;
+}
+footer nav {
+  display: flex;
+  justify-content: space-around;
+  background: #333;
+  padding: 1em;
+}
+footer button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1em;
+}

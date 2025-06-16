@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BalakSix</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="login-screen" id="loginScreen">
+    <h2>Login</h2>
+    <input type="text" placeholder="Username" id="username" />
+    <input type="password" placeholder="Password" id="password" />
+    <button onclick="login()">Login</button>
+  </div>
+
+  <div class="dashboard hidden" id="dashboard">
+    <header>
+      <h1>Selamat Datang di BalakSix</h1>
+      <p>Saldo: Rp 999.999</p>
+    </header>
+
+    <section class="slider">
+      <h3>Game Populer</h3>
+      <div class="slides">
+        <img src="images/game1.jpg" alt="Game 1" />
+        <img src="images/game2.jpg" alt="Game 2" />
+        <img src="images/game3.jpg" alt="Game 3" />
+      </div>
+    </section>
+
+    <section class="games">
+      <div class="game-box">Game Slot A</div>
+      <div class="game-box">Game Slot B</div>
+      <div class="game-box">Game Slot C</div>
+    </section>
+
+    <section class="deposit">
+      <h3>Deposit</h3>
+      <p><i>Silakan edit bagian ini nanti sesuai kebutuhanmu</i></p>
+    </section>
+
+    <footer>
+      <nav>
+        <button>Beranda</button>
+        <button>Deposit</button>
+        <button>Profil</button>
+      </nav>
+    </footer>
+  </div>
+
+  <script>
+    function login() {
+      document.getElementById('loginScreen').classList.add('hidden');
+      document.getElementById('dashboard').classList.remove('hidden');
+    }
+  </script>
+</body>
+</html>
